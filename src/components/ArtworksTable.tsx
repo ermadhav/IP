@@ -87,7 +87,6 @@ export default function ArtworksTable() {
 
     setSelectedMap(prev => {
       const copy = new Map(prev)
-      // Add new selections
       selected.forEach(row => {
         copy.set(row.id, { id: row.id, title: row.title, artist_display: row.artist_display })
       })
