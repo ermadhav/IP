@@ -1,0 +1,38 @@
+.app {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.selection-panel {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.selection-panel ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.selection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.selection-item:last-child {
+  border-bottom: none;
+}
+
+.selection-item strong {
+  display: block;
+}
+
+.selection-item .meta {
+  font-size: 0.85rem;
+  color: #666;
+}
