@@ -37,7 +37,6 @@ export default function ArtworksTable() {
     Map<number, Pick<Artwork, 'id' | 'title' | 'artist_display'>>
   >(new Map())
 
-  // For current page DataTable selection
   const [pageSelection, setPageSelection] = useState<Artwork[]>([])
 
   const fetchPage = async (page: number) => {
