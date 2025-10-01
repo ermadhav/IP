@@ -60,7 +60,6 @@ export default function ArtworksTable() {
       setRows(artworks)
       setTotalRecords(json.pagination?.total ?? 0)
 
-      // Restore page selection based on selectedMap
       const restored = artworks.filter(r => selectedMap.has(r.id))
       setPageSelection(restored)
     } catch (err) {
