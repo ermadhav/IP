@@ -91,7 +91,6 @@ export default function ArtworksTable() {
       selected.forEach(row => {
         copy.set(row.id, { id: row.id, title: row.title, artist_display: row.artist_display })
       })
-      // Remove deselected rows from this page
       rows.forEach(row => {
         if (!selected.find(s => s.id === row.id)) {
           copy.delete(row.id)
