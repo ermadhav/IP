@@ -32,7 +32,6 @@ export default function ArtworksTable() {
   const [totalRecords, setTotalRecords] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
 
-  // Persist selections across pages
   const [selectedMap, setSelectedMap] = useState<
     Map<number, Pick<Artwork, 'id' | 'title' | 'artist_display'>>
   >(new Map())
