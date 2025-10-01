@@ -80,7 +80,6 @@ export default function ArtworksTable() {
     fetchPage(newPage)
   }
 
-  // Handle row selection changes
   const onSelectionChange = (e: { value: Artwork[] }) => {
     const selected = e.value
     setPageSelection(selected)
